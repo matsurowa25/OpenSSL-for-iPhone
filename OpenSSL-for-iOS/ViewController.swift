@@ -36,7 +36,7 @@ class ViewController: UIViewController {
         self.calculateHash()
     }
     
-    func textFieldDidChange() {
+    @objc func textFieldDidChange() {
         self.calculateHash()
     }
 
