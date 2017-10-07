@@ -131,6 +131,7 @@ check_status()
 run_configure()
 {
   echo "  Configure..."
+  echo "    Options: ${LOCAL_CONFIG_OPTIONS}"
   set +e
   if [ "${LOG_VERBOSE}" == "verbose" ]; then
     ./Configure ${LOCAL_CONFIG_OPTIONS} | tee "${LOG}"
@@ -386,9 +387,6 @@ if [ "${CONFIG_DISABLE_BITCODE}" == "true" ]; then
   echo "  Bitcode embedding disabled"
 fi
 echo "  Number of make threads: ${BUILD_THREADS}"
-if [ -n "${CONFIG_OPTIONS}" ]; then
-  echo "  Configure options: ${CONFIG_OPTIONS}"
-fi
 echo "  Build location: ${CURRENTPATH}"
 echo
 
