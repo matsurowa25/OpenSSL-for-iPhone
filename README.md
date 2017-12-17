@@ -1,4 +1,4 @@
-# OpenSSL-for-iOS [![Build Status](https://travis-ci.org/x2on/OpenSSL-for-iPhone.svg)](https://travis-ci.org/x2on/OpenSSL-for-iPhone) [![license](https://img.shields.io/github/license/x2on/OpenSSL-for-iPhone.svg)](https://github.com/x2on/OpenSSL-for-iPhone/blob/master/LICENSE) [![OpenSSL version](https://img.shields.io/badge/OpenSSL-1.0.2l-lightgrey.svg)]() [![OpenSSL version](https://img.shields.io/badge/OpenSSL-1.1.0f-lightgrey.svg)]() [![iOS support](https://img.shields.io/badge/iOS-7.0%20--%2011.0-lightgrey.svg)]() [![tvOS support](https://img.shields.io/badge/tvOS-9.2--%2011.0-lightgrey.svg)]()
+# OpenSSL-for-iOS [![Build Status](https://travis-ci.org/x2on/OpenSSL-for-iPhone.svg)](https://travis-ci.org/x2on/OpenSSL-for-iPhone) [![license](https://img.shields.io/github/license/x2on/OpenSSL-for-iPhone.svg)](https://github.com/x2on/OpenSSL-for-iPhone/blob/master/LICENSE) [![OpenSSL version](https://img.shields.io/badge/OpenSSL-1.0.2n-lightgrey.svg)]() [![OpenSSL version](https://img.shields.io/badge/OpenSSL-1.1.0g-lightgrey.svg)]() [![iOS support](https://img.shields.io/badge/iOS-7.0%20--%2011.2-lightgrey.svg)]() [![tvOS support](https://img.shields.io/badge/tvOS-9.2--%2011.2-lightgrey.svg)]()
 
 This is a script for using self-compiled builds of the OpenSSL-library on the iPhone. You can build apps with Xcode and the official SDK from Apple with this. I also made a small example-app for using the libraries with Xcode and the iPhone/iPhone-Simulator.
 
@@ -11,7 +11,7 @@ You must build the OpenSSL-Libraries (1.0.2-branch) before running the sample wi
 
 To build OpenSSL 1.1.0-branch build the OpenSSL-Libraries with:
 ```bash
-./build-libssl.sh --version=1.1.0f
+./build-libssl.sh --version=1.1.0g
 ```
 
 For all options see the help
@@ -19,10 +19,10 @@ For all options see the help
 ./build-libssl.sh --help
 ```
 
-This repository contains an iOS 10.0 Xcode Project which uses the OpenSSL Libraries. The examples uses the MD5 or SHA256-algorithm to calculate an md5 or sha256 hash from an UITextfield.
+This repository contains an iOS 11.0 Xcode Project which uses the OpenSSL Libraries. The examples uses the MD5 or SHA256-algorithm to calculate an md5 or sha256 hash from an UITextfield.
 
 ## System support
-**iOS 7.0 - iOS 11.0 (i386, x86_64, armv7, armv7s, armv64, bitcode) and tvOS 9.2 - tvOS 11.0 (x86_64, arm64, bitcode) are currently supported.**
+**iOS 7.0 - iOS 11.2 (i386, x86_64, armv7, armv7s, armv64, bitcode) and tvOS 9.2 - tvOS 11.2 (x86_64, arm64, bitcode) are currently supported.**
 
 For iOS < 7.0 you must use Xcode < 7 and an older version of the build script.
 
@@ -33,6 +33,7 @@ If you have problems building for arm64 please uninstall MacPorts (see [#28](htt
 * <http://www.x2on.de/2010/07/13/tutorial-iphone-app-with-compiled-openssl-1-0-0a-library/>
 
 ## Changelog
+* 2017-12-16: Xcode 9.2, iOS/tvOS 11.2, OpenSSL 1.0.2n, 1.1.0g
 * 2017-10-06: Xcode 9, iOS/tvOS 11.0
 * 2017-05-25: OpenSSL 1.0.2l, 1.1.0f
 * 2017-02-16: OpenSSL 1.1.0e
